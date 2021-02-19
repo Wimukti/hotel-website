@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HOTEL OBEROI</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+* {
+  box-sizing: border-box;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  display: table;
+  width: 33.33%;
+  padding: 8px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.column h2{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+.column p{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+.column h3{
+    color: darksalmon;
+    text-align: center;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</head>
+<body id="grad1">
+ 
+<style>
+  #grad1 {
+    height: 200px;
+    background-color: gold; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, rgb(248, 208, 108) , black);
+}
+</style>
+  
+<div style="text-align:center">
+  <h2>Click on the images below:</h2>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="Images/Deluxe_Room.png" alt="Deluxe Room" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="Images/Luxury_Room.png" alt="Luxury Room" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="Images/Family_Rooms.png" alt="Family Rooms" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+<body>
+
+<div class="row">
+  <div class="column" style="background-color:rgb(228, 228, 144)">
+    <h2>DELUXE ROOM</h2>
+    <p>Unwind and experience everything Kandy has to offer from the spacious Deluxe Room at the Earl’s Regency,
+    a popular luxury hotel among Sri Lanka Kandy hotels.
+    Come back to a relaxing environment after a long day of exploring the beautiful land.
+    An ideal choice for its exceptional value,
+    the Deluxe Room has more space and more amenities to make your stay in a luxury hotel in Kandy a memorable one.</p>
+    <h3>PRICES</h3>
+    <p>All rates are per room,for bed and breakfast,including tax and service.</p>
+    <h3>FACILITIES</h3>
+    <p>King-sized Bed or Twin Beds</br>
+        Divided Living Area</br>
+        Private Balcony</br>
+        Fully Air-conditioned</br>
+        TV with Satellite and Local Channels</br>
+        Writing Desk</br>
+        Bathtub with Free Toiletries</br>
+        Hairdryer</br>
+        Tea and Coffee Making Facilities</br>
+        Bottled Water</br>
+        Telephone with International Direct Dialling Facilities</br>
+        In-Room Digital Safe</br>
+        Stocked Mini-Fridge at Cost</br>
+        24 Hour Room Service</br>
+        Laundry and Dry Cleaning Service at Cost</br>
+      </br></br></br></br></br></br>
+      </p>
+  </div>
+  <div class="column" style="background-color:rgb(245, 245, 180);">
+    <h2>LUXURY ROOM</h2>
+    <p>Our luxury hotel is perfect for those in search of hotels in Kandy for honeymoon as the elegance and charm of the Luxury Room at Earl’s Regency adds to the lifelong memories our guests will create in this award winning Kandy luxury hotel.
+      With everything you need for a relaxed and comfortable stay,
+      the rooms are decorated to emphasis the city that surrounds it.
+      Pamper yourself in our in-room private Jacuzzi which makes a perfect ending to a perfect day.</p>
+      <h3>PRICES</h3>
+    <p>All rates are per room, for bed and breakfast, including tax and service.</p>
+    <h3>FACILITIES</h3>
+    <p>King-sized Bed or Twin Beds</br>
+      Separate Living Area</br>
+      Private Balcony</br>
+      Fully Air-conditioned</br>
+      LED TV with Satellite and Local Channels</br>
+      DVD Player with Free DVD Rental from Front Desk</br>
+      Writing Desk</br>
+      Bathtub with Free Toiletries</br>
+      In-room Private Jacuzzi</br>
+      Bathrobes and Slippers</br>
+      Hairdryer</br>
+      Tea and Coffee Making Facilities</br>
+      Complimentary In-Room Snacks</br>
+      Bottled Water</br>
+      Telephone with International Direct Dialling Facilities</br>
+      In-Room Digital Safe</br>
+      Stocked Mini-Fridge at Cost</br>
+      24 Hour Room Service</br>
+      Laundry and Dry Cleaning Service at Cost</p>
+    </br></br>
+  </div>
+  <div class="column" style="background-color:rgba(241, 241, 150, 0.973);">
+    <h2>FAMILY ROOM</h2>
+    <p>Private rooms.Private balcony.Private Jacuzzi.
+    The Family Rooms at Earls Regency offer an opulent and yet cozy experience that makes it unique among family hotels in Sri Lanka.
+    Make our Family Rooms your private sanctuary during your vacation in Kandy.
+    Classic furnishings with modern elements complete our five-star hotel amenities and view of the majestic Kandy Mountains.</p>
+    <h3>PRICE</h3>
+    <p>All rates are per room, for bed and breakfast, including tax and service.</p>
+    <h3>FACILITIES</h3>
+    <p>King-sized Bed or Twin Beds</br>
+      Separate Living Area</br>
+      Private Balcony</br>
+      Fully Air-conditioned</br>
+      LED TV with Satellite and Local Channels</br>
+      DVD Player with Free DVD Rental from Front Desk</br>
+      Writing Desk</br>
+      Bathtub with Free Toiletries</br>
+      In-room Private Jacuzzi</br>
+      Bathrobes and Slippers</br>
+      Hairdryer</br>
+      Tea and Coffee Making Facilities</br>
+      Complimentary In-Room Snacks</br>
+      Bottled Water</br>
+      Telephone with International Direct Dialling Facilities</br>
+      In-Room Digital Safe</br>
+      Stocked Mini-Fridge at Cost</br>
+      24 Hour Room Service</br>
+      Laundry and Dry Cleaning Service at Cost</br>
+    </br></br>
+    </p>
+  </div>
+</div>
+
+</body>
+
+
+</html>

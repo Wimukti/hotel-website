@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HOTEL OBEROI</title>
+<style>
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid lightyellow;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color:moccasin;
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:darkblue;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: gold; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, rgb(248, 208, 108) , black);
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 50px;
+  padding: 20px;
+  font-size: large;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/* Style the footer */
+.footer {
+  background-color: black;
+  padding: 30px;
+  text-align: center;
+}
+.footer h2{
+    color: goldenrod;
+}
+.footer p{
+    color: gold;
+    font-size: larger;
+}
+.header {
+  background-color: black;
+  padding: 10px;
+  
+  text-align: center;
+}
+.header h1{
+    color: gold;
+    font-family:cursive;
+}
+.header h2{
+    color: goldenrod;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+</style>
+</head>
+<body id="grad1">
+ 
+  <style>
+    #grad1 {
+      height: 200px;
+      background-color: gold; /* For browsers that do not support gradients */
+      background-image: linear-gradient(to right, rgb(248, 208, 108) , black);
+  }
+  </style>
+<body>
+
+    <div class="header">
+        <h1>'HOTEL OBEROI'</h1>
+        <h2>CONTACT US</h2>
+        <img src="Images/contactus.jpg" style="width: 100%;">
+      </div>
+      
+<div class="container">
+  <div class="row">
+    <div class="column">
+    
+      <img src="Images/Reception.jpg" style="height: 900px; width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+       <h2>RESERVATION</h2></br>
+        <label for="title">Please select title</label>
+        <select id="title" name="title">
+          <option value="Mr">Mr</option>
+          <option value="Mrs">Mrs</option>
+          <option value="Ms">Ms</option>
+          <option value="Dr">Dr</option>
+        </select>
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country" placeholder="Your country..">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email..">
+        <label for="Rtype">Select room type</label>
+        <select id="Rtype" name="Rtype">
+          <option value="Duluxe Room">Duluxe Room</option>
+          <option value="Luxury Room">Luxury Room</option>
+          <option value="Family Room">Family Room</option>
+        </select>
+        <label for="Nroom">No.of rooms</label>
+        <select id="Nroom" name="Nroom">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <label for="Nguest">No.of guests</label>
+        <select id="Nguest" name="Nguest">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <label for="subject">Comments</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>  
+  </div>
+</div>
+<div class="footer">
+    <h2>CONTACT DETAILS</h2>
+    <p>Hotel Oberoi, Kandy, Sri Lanka.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    +94(81)2503214&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <u>ob.obiz.lk@aitkenspence.lk</u></p>
+</div>
+</body>
+</html>

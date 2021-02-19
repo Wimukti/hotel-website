@@ -1,0 +1,125 @@
+/*Home Page*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    background-size: cover;
+    height: 120vh;
+}
+.navbar{
+    height: 160px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.459);
+}
+.logo{
+    height: 120px;
+    width: 150px;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+.navbar ul{
+    float: right;
+    margin-right: 80px;
+    margin-top: 30px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 8px;
+    line-height: 10px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+    color:gold;
+    background: black;
+    padding: 10px 50px;
+}
+.navbar ul li a:hover{
+    background:navy;
+}
+.sidebar{
+    height: 500px;
+    width: 350px;
+    background: rgba(0,0,0,0.521);
+    margin-top: 80px;
+    margin-left: 80px;
+}
+.sidebar h2{
+    margin-left: 65px;
+    margin-top: 80px;
+    color: rgb(255, 217, 0);
+}
+.sidebar p{
+    font-size: larger;
+    text-align: center;
+    color:khaki;
+    margin: 30px 40px 0px 40px;
+}
+
+/*Restuarant*/
+* {
+    box-sizing: border-box;
+  }
+  
+.body {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+  
+.container {
+    position: relative;
+    height: 400px;
+}
+  
+.container img {
+      vertical-align: middle;
+      height: 480px;
+}
+  
+.container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.26); /* Black background with 0.5 opacity */
+    color: gold;
+    width: 97.5%;
+    padding: 20px;
+    text-align:center;
+    margin-bottom: 40px;
+}
+.content h1{
+      color: rgb(241, 208, 19);
+      margin-left: 450px;
+      text-align:justify;
+}
+.content p{
+      font-size: larger;
+}
+.content h3{
+      margin-top: 5px;
+      text-align: center;
+      color: white;
+}
+  
+*{
+    box-sizing: border-box;
+}
+
+.Dining h1{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 100px;
+    font-size: larger;
+}
+.column{
+    float: left;
+    margin-left: 35px;
+    width: 30%;   
+}
+.row::after{
+    clear: both;
+    display:flex;
+}
